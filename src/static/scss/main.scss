@@ -8,7 +8,6 @@
 @import "callback";
 @import "card";
 @import "tabs";
-@import "other-progects";
 @import "advantages";
 @import "partners";
 @import "about-us";
@@ -154,24 +153,7 @@ body * {
   height: 103px;
 }
 
-.it-main-page__top {
-  @include row-flex();
-  margin-top: 20px;
-}
 
-.it-main-page__left {
-  @include col();
-  @include size(9);
-  @include size-sm(12);
-
-
-}
-
-.it-main-page__right {
-  @include col();
-  @include size(3);
-  @include size-sm(12);
-}
 
 
 
