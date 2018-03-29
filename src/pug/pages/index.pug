@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width", initial-scale=1)
+        title Sportmpro
+        link(rel="stylesheet" type="text/css" href="static/css/jquery.fancybox.css" )
+        link(rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css" )
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic', rel='stylesheet')
+        link(rel="stylesheet" type="text/css" href="static/css/main.css" )
+        script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+
+    body
+        .it-main-page__wrapper
+            .it-main-page__content
+                include header
+                include breadcrumbs
+                .it-container
+                    .it-main-page__top
+                        .it-main-page__left
+                            include card
+                            include tabs
+                            include callback-file
+                            include advantages
+                            include partners
+                            include steps
+                            include about-us
+                            include photo
+                            include callback
+                        aside.it-main-page__right
+                            include other-progects
+                    include modal
+
+
+        script(src='static/js/jquery.min.js', type='text/javascript')
+        script(src='static/js/jquery.fancybox.js', type='text/javascript')
+        script(src='static/js/jquery.maskedinput.min.js', type='text/javascript')
+        script(src='static/js/owl.carousel.min.js', type='text/javascript')
+        script(src='static/js/main.js', type='text/javascript')
+        script(src='static/js/script.js', type='text/javascript')
