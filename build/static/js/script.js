@@ -27,11 +27,10 @@ signNumber.oninput = function () {
     this.value = this.value.replace(/\D/g, '');
 };
 
-// var signValue = signNumber.value;
 
 signMinus.onclick = function () {
 
-    if(signNumber.value != 0) {
+    if(signNumber.value >= 2) {
         var signValueCheange = --signNumber.value;
         signNumber.setAttribute("value", signValueCheange);
     }

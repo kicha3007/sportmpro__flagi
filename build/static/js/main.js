@@ -166,6 +166,57 @@ $(function () {
 $("[data-phone]").mask("+7 (999) 99-99-999");
 
 
+
+
+/* ****************************** calculation-new ****************************** */
+
+
+
+
+    function  getCalculationValue () {
+        var getCalcSize = $("[data-calc-size]:selected");
+        var getCalcSizeValue = getCalcSize.data("calcSize");
+
+
+        var getCalcQuantity = $("[data-sign-value]");
+        var getCalcQuantityValue = getCalcQuantity.val();
+
+
+        var getCalcPrint = $("[data-calc-print]:selected");
+        var getCalcPrintValue = getCalcPrint.data("calcPrint");
+
+        var getCalcSewingArea = $("[data-calc-sewing-area]:selected");
+        var getCalcSewingAreaValue = getCalcSewingArea.data("calcSewingArea");
+
+        var getCalcSewingDesigner = $("[data-calc-designer]:selected");
+        var getCalcSewingDesignerValue = getCalcSewingDesigner.data("calcDesigner");
+
+        var calcSizeAndQuantity = (+getCalcSizeValue * +getCalcQuantityValue * getCalcPrintValue) ;
+
+        var calcPrint;
+
+        if (+getCalcSewingAreaValue === 1) {
+            calcPrint = Math.round(calcSizeAndQuantity * 10 /100) ;
+        }  else {
+            calcPrint = 0;
+        }
+
+        var calcSum = calcSizeAndQuantity + calcPrint + getCalcSewingDesignerValue;
+        var  showCalcSum =  $("[data-calc-sum]");
+
+        showCalcSum.text(calcSum) ;
+
+
+
+
+        console.log(showCalcSum);
+    }
+
+
+
+
+
+
 /* ------------------- calculation ----------------------- */
 
 var stepCounter = +1;
@@ -207,6 +258,7 @@ function calculation() {
             dotLine.addClass("active");
             calculationText.addClass("active");
             calculationText.parent().prev().find("[data-calculation-text]").removeClass("active");
+            getCalculationValue();
             break;
         case 4:
     }
@@ -285,8 +337,6 @@ $("[data-file-default]").change(function () {
         });
 
     });
-
-
 
 
 

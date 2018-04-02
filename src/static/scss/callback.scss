@@ -86,13 +86,13 @@
 }
 
 .it-callback__input {
-  border: none;
   font-size: 14px;
   padding: 10px 20px;
   color: rgba(0, 0, 0, 0.38);
   width: 100%;
   line-height: 1.42;
   border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .it-callback__buttons {
@@ -167,7 +167,7 @@
   height: 100%;
   display: inline-block;
   top: 0;
-  left: -1px;
+  left: 0;
   text-align: center;
   font-size: 16px;
   color: $main-color;
@@ -319,4 +319,29 @@
 .it-callback__half--size {
   max-width: 178px;
   flex-basis: 140px;
+}
+
+.it-callback__half--size2 {
+  max-width: 227px;
+  margin-top: 20px;
+}
+
+.it-callback__buttons--size2 {
+  max-width: 130px;
+  margin-top: 20px;
+}
+
+.it-file__callback-half {
+  position: relative;
+}
+
+.it-callback__file-prompt {
+  position: absolute;
+  top: -20px;
+  font-weight: 300;
+  font-size: 10px;
+  color: #333333;
+  opacity: 0.5;
+  width: 100%;
+
 }

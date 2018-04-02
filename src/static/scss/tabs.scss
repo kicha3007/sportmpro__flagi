@@ -122,5 +122,12 @@
 .it-tabs__content  ul li p,
 .it-tabs__content  ul li img {
   margin-left: -38px;
+  margin-bottom: 20px;
 }
 
+.it-tabs__nav-wrap--jus-content {
+  justify-content: space-between;
+  @include phones {
+      justify-content: center;
+  }
+}
