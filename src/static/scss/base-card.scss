@@ -81,7 +81,8 @@
   margin-bottom: 25px;
 }
 
-.base-card__number span {
+.base-card__number span,
+.base-card__number sup {
   font-size: 24px;
   font-weight: 700;
   color: #E31E24;

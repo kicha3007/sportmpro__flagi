@@ -127,6 +127,7 @@
 
 .it-tabs__nav-wrap--jus-content {
   justify-content: space-between;
+  padding: 0 20px;
   @include phones {
       justify-content: center;
   }
