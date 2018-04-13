@@ -1,9 +1,9 @@
 @import '__vars';
 @import '__mixins';
 @import "smart-grid";
-/*@import 'header';
+@import 'header';
 @import "nav";
-@import "breadcrumbs";*/
+@import "breadcrumbs";
 
 //@import "card";
 
@@ -11,9 +11,9 @@
 //@import "about-us";
 //@import "photo";
 
-//@import "callback";
+@import "callback";
 //@import "modal";
-//@import "tabs";
+@import "tabs";
 //@import "advantages";
 
 @import "base-offer";
@@ -158,10 +158,8 @@ body * {
 .it-main-page__wrapper:after {
   content: "";
   display: block;
-  height: 103px;
+  height: 88px;
 }
-
-
 
 
 

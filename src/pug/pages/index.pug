@@ -13,8 +13,9 @@ html(lang="ru-RU")
     body
         .it-main-page__wrapper
             .it-main-page__content
-                include header
-                include breadcrumbs
+                include callback-file
+                include tabs
+                include nav
                 include base-offer
                 include base-card
                 include advantages
@@ -24,7 +25,7 @@ html(lang="ru-RU")
                 include base-steps
                 include seo-text
 
-                include modal
+
 
 
         script(src='static/js/jquery.min.js', type='text/javascript')
